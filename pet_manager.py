@@ -45,7 +45,7 @@ while True :
         find = input("Which pet are you looking for: ")
         f_pet = find.lower()
         if f_pet in pets:
-            print(f"{f_pet} is here and its a {pets[f_pet]['species']}, {pets[f_pet]['age']} years old")
+            print(f"{f_pet} is here and it's a {pets[f_pet]['species']}, {pets[f_pet]['age']} years old")
         else :
             print("its not here")
         print("_____________")
