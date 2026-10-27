@@ -20,7 +20,7 @@ pets = {
 
 while True :
     menu()
-    answer = digits("What do u want to do: ")
+    answer = digits("What do you want to do: ")
     if answer == 5:
         print("bye")
         break
@@ -34,7 +34,7 @@ while True :
             print("_____________")
                 
     if answer == 4:
-        remove = input("Which pet would u like to remove, (type name): ")
+        remove = input("Which pet would you like to remove, (type name): ")
         if remove.lower() in pets:
             print("removed")
             del(pets[remove.lower()])
@@ -42,10 +42,10 @@ while True :
         else :
             print("not found")
     if answer == 3:
-        find = input("Which pet are u looking for: ")
+        find = input("Which pet are you looking for: ")
         f_pet = find.lower()
         if f_pet in pets:
-            print(f"{f_pet} is here and its a {pets[f_pet]['species']} its {pets[f_pet]['age']} years old")
+            print(f"{f_pet} is here and its a {pets[f_pet]['species']}, {pets[f_pet]['age']} years old")
         else :
             print("its not here")
         print("_____________")
